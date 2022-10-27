@@ -461,24 +461,66 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" type="button" data-modal-close>
-          <svg class="modal-buttoms" width="11" height="11">
+          <svg class="modal-buttons" width="11" height="11">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          magnam qui excepturi illum veritatis nulla numquam adipisci maxime
-          aliquam sunt doloremque, minus iste illo, dolores est hic commodi,
-          dicta odit. Architecto cumque dolores vitae omnis maxime et iste in
-          quisquam minima praesentium sequi autem libero quas reprehenderit
-          magnam, exercitationem ducimus porro totam harum veniam ad fuga quam.
-          Inventore aut facere illo, voluptatem alias natus accusamus blanditiis
-          rerum ipsam quod repellat velit tempore iusto quae nostrum quisquam
-          tenetur quibusdam veniam quam. Odio, corrupti veritatis impedit
-          dolorum asperiores cum, eveniet accusamus excepturi, corporis maiores
-          voluptas dignissimos illo consequuntur commodi natus molestias illum?
-        </p>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="contact-form">
+          <label class="form-label" for="nickname">Ім'я</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              name="nickname"
+              id="nickname"
+            />
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-name"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user-tel">Телефон</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+            />
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user-mail">Пошта</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="email"
+              name="user-mail"
+              id="user-mail"
+            />
+            <svg class="modal-icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-mail-modal"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user-coment">Коментар</label>
+          <textarea
+            class="form-coment"
+            name="user-coment"
+            id="user-coment"
+            placeholder="Введіть текст"
+          ></textarea>
+          <input
+            class="checkbox-input visually-hidden"
+            type="checkbox"
+            name="terms-checkbox"
+            id="terms-checkbox"
+          />
+          <label class="checkbox-label" for="terms-checkbox">
+            Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
