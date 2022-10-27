@@ -393,16 +393,20 @@ body {
 .checkbox-input {
   appearance: none;
 }
-
+.checkbox-label {
+  position: relative;
+}
 .checkbox-label::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 16;
   height: 15;
-  border: ;
+  border: 1px solid var(--text-color);
   border-radius: 2px;
 }
+
 /* Section Переваги */
 .section-benefits {
   padding-top: 94px;
