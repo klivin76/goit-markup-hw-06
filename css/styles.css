@@ -31,7 +31,6 @@
 }
 
 body {
-  max-width: 1600px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -64,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1600px;
 
   margin: 0 auto;
   border: 1px solid var(--border-color-header);
@@ -205,11 +205,8 @@ body {
 /* Hero */
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 600px;
-  margin: 0 auto 30px;
+  max-width: 1600px;
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -225,12 +222,12 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  padding: 200px auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   max-width: 696px;
-
   margin: 0 auto;
 
   color: var(--color-white);
@@ -278,9 +275,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: var(--background-color-modal);
   opacity: 1;
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -299,8 +298,7 @@ body {
   min-height: 581px;
   left: 50%;
   top: 50%;
-  padding: 20px;
-
+  padding: 40px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -328,6 +326,7 @@ body {
 }
 
 .modal-title {
+  margin-top: 0%;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -354,11 +353,12 @@ body {
 }
 .form-input {
   width: 100%;
+  height: 40px;
   padding: 12px 12px 12px 42px;
   border: 1px solid var(--background-color-modal);
   border-radius: 4px;
   outline: none;
-  transition: accent-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .form-input:focus {
@@ -390,7 +390,11 @@ body {
   border: 1px solid var(--background-color-modal);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+.form-coment:focus {
+  border-color: var(--accent-color);
 }
 .form-coment::placeholder {
   color: var(--color-text-coment);
@@ -430,7 +434,7 @@ body {
 .icon {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 10px;
   transform: translateY(-50%);
   display: inline-block;
   width: 16px;
@@ -438,8 +442,8 @@ body {
 
   background-color: var(--background-color);
   border: 1px solid var(--color-logo);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .checkbox-input:checked + .icon {
@@ -483,7 +487,10 @@ body {
 
 /* Section Переваги */
 .section-benefits {
+  max-width: 1600px;
   padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-benefits {
@@ -598,7 +605,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  max-width: 1600px;
   padding: 94px 0;
   margin: 0 auto;
   text-align: center;
@@ -738,8 +745,11 @@ body {
 }
 /* Footer */
 .footer {
+  max-width: 1600px;
   height: 252px;
   padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-color-primary);
 }
 
