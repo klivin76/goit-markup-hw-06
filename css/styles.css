@@ -749,7 +749,7 @@ body {
 }
 /* Footer */
 .footer {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: 252px;
   padding-top: 0;
   margin-left: auto;
